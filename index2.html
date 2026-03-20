@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mobilisations AESH - Carte CGT</title>
+    <style>
+        .dot-pulse { 
+            background-color: #FCBE00;
+            animation: pulse 4s infinite; 
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(252, 190, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(252, 190, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(252, 190, 0, 0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen p-4 md:p-10 font-sans">
+
+    <div class="max-w-10xl mx-auto">
+        
+        <div style="background-color: #CD1719;" class="text-white p-6 rounded-t-2xl shadow-lg flex justify-between items-center border-b-4 border-black/10">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-extrabold uppercase tracking-tighter">Mobilisations AESH</h1>
+                <p class="text-white/90 text-xs md:text-sm font-bold uppercase tracking-widest mt-1">Actions & Rassemblements</p>
+            </div>
+            
+            <div class="flex items-center bg-black/20 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/10">
+                <span class="w-3 h-3 rounded-full mr-2 dot-pulse"></span>
+                <span style="color: #FCBE00;">En direct</span>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-2xl rounded-b-2xl overflow-hidden border-x border-b border-gray-200">
+            
+            <div class="relative w-full h-[500px] md:h-[650px] overflow-hidden bg-gray-100">
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1ELmpmWnINFu4wniyQZYfUiEQU_EW840&ehbc=2E312F" 
+                    class="absolute left-0 w-full h-[575px] md:h-[725px] border-0"
+                    style="top: -72px;"
+                    loading="lazy">
+                    </iframe>
+            </div>
+
+            <div class="p-4 bg-gray-50 text-center">
+                <p class="text-gray-500 text-[12px] font-bold uppercase italic">
+                    📍 Consultez les points de mobilisation directement sur cette carte
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-center items-center gap-4 ">
+            <div class="h-[1px] w-12 bg-gray-700 opacity-40"></div>
+            <p class="text-[25px] font-bold uppercase tracking-widest"><span style="color: #CD1719">Pôle National  AESH - CGT Éduc'action</span></p>
+            <div class="h-[1px] w-12 bg-gray-700 opacity-40"></div>
+        </div>
+    </div>
+
+</body>
+</html>
